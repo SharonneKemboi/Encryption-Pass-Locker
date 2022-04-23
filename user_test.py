@@ -40,3 +40,14 @@ class TestUser(unittest.TestCase):
         '''
         self.new_account.generate_password() #generating new password
         self.assertEqual(self.new_account.password,"password")
+
+
+#second test
+from user import Credentials
+
+class TestCredentials(unittest.TestCase):
+    
+    def setUp(self):
+        
+        self.user_credential = Credentials("sharonnevanessa", "sharonnekay23@gmail.com", "shazzykay01" )
+

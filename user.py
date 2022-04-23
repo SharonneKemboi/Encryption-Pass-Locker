@@ -52,6 +52,30 @@ class User:
 	    ## printing the list
         print(password)
 
+    @classmethod #decorator used to declare a method in the class as a class method that can be called using ClassName.
+    def account_exists(cls, email, password):
+
+        for account in cls.user_createaccount:
+            if account.email == email and account.password == password:
+
+                return True
+        
+        return False  
+class Credentials:
+
+    user_credentials = []
+
+    def __init__(self, account_name, email, password):
+        self.account_name = account_name
+        self.email = email
+        self.password = password
+
+    def save_credentials(self):
+        Credentials.user_credentials.append(self)
+
+    def delete_credentials(self):
+        Credentials.user_credentials.remove(self)
+
        
 
 
