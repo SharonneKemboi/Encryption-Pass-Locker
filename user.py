@@ -1,4 +1,5 @@
 import random  #to generate the pseudo-random variables, in this case the random passwords
+import pyperclip #Pyperclip will allow us to copy and paste items to our clipboard.
 
 class User:
     """
@@ -75,6 +76,25 @@ class Credentials:
 
     def delete_credentials(self):
         Credentials.user_credentials.remove(self)
+
+
+    @classmethod
+    def find_by_account_name(cls,account_name):
+
+        for account in cls.user_credentials:
+            if account.account_name == account_name:
+                return account
+                
+
+    @classmethod
+    def copy_credential(cls,account_name):
+        credential_found = Credentials.find_by_account_name(account_name)
+        pyperclip.copy(credential_found.password)
+        
+    @classmethod
+    def display_credentials(cls):
+
+        return cls.user_credentials
 
        
 
