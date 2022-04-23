@@ -24,5 +24,21 @@ class User:
         self.email = email
         self.password = password
 
+    def save_account(self):
+        User.user_createaccount.append(self) #Create a save_account method that is called on a user object and appends it .
+
+
+    def generate_password(self):
+        '''
+        generate new password
+        ''' 
+        chars = '1234567890abcdefghijklmnop?/@-' #characters to choose from
+        length = int(input("Please Enter the Length of your Preferred Password: "))
+        password = ''
+        for chars in range(length):
+            password += random.choice(chars) #generate random password
+        print (password) 
         
+
+
 
