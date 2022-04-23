@@ -13,6 +13,7 @@
 
 <img src="https://github.com/SharonneKemboi/Encryption-Pass-Locker/blob/master/Images/Screenshot%20from%202022-04-23%2019-10-59.png">
 
+
 <p>Atarah's Passsaver & Locker is a python application that helps users generate and store passwords for their personal accounts. The Password Locker runs on the terminal and uses short codes to navigate through it.</p>
 
 
@@ -31,7 +32,7 @@
 
 ## Description
 
-This Python application allows a user save their existing credentials for any accounts that they may have. Once they create a username and password they can add credentials and the program saves the credentials. 
+> This Python application allows a user save their existing credentials for any accounts that they may have. Once they create a username and password they can add credentials and the program saves the credentials. 
 
 
 
@@ -57,13 +58,13 @@ This Python application allows a user save their existing credentials for any ac
 
 
 ### How To Access the Site
-This App is being hosted by GitHub Pages. The link to the Repo is: https://github.com/SharonneKemboi/Encryption-Pass-Locker
+> This App is being hosted by GitHub Pages. The link to the Repo is: https://github.com/SharonneKemboi/Encryption-Pass-Locker
 
 
-# Behaviour driven development
+## BDD
 | Behaviour                          | Input                                | Output  |
 | ---:                               | ---:                                 | ---:    |
-| Run the Atarah Passaver App in the terminal | chmod +x run.py followed by ./run.py | Runs|
+| Run the Atarah Passaver App in terminal | chmod +x run.py followed by ./run.py | Runs|
 | Asks to either create a account or login | Enter user name | Asks for password |
 | Prompts password   | Enter password | Displays a welcome message |
 | Lists an option for user interactions| select short code | prompts generated |
@@ -73,7 +74,7 @@ This App is being hosted by GitHub Pages. The link to the Repo is: https://githu
 
 ## TDD
 
--To test the app, run this command in the terminal;
+> To test the app, run this command in the terminal;
 
 `$ python3.8 user_test.py`
 
@@ -86,7 +87,7 @@ This App is being hosted by GitHub Pages. The link to the Repo is: https://githu
 * [How to Create a Password Generator Using Python ](https://geekflare.com/password-generator-python-code/)
 
 ## Known Bugs
-* All known bugs were fixed (Bug fixed) . Seen any Bug? Feel free to reach me Asap!!
+> All known bugs were fixed (Bug fixed) . Seen any Bug? Feel free to reach me Asap!!
 
 ## License
 
@@ -99,7 +100,7 @@ This App is being hosted by GitHub Pages. The link to the Repo is: https://githu
 ## Authors information
 Feel free to add your contribution to the code.
 
-If you have any questions,comments or advice,feel free to contact me
+> If you have any questions,comments or advice,feel free to contact me
 
 * [Email](sharonnekay23@gmail.com)
 * [LinkedIn](https://www.linkedin.com/in/sharonne-vanessa-kemboi-a118bb135)
