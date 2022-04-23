@@ -1,4 +1,4 @@
-# Encryption-Pass-Locker
+# Atarah's Passaver  & Locker
 
 > Developer: Sharonne Kemboi
 
