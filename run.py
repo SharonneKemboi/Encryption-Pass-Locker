@@ -2,6 +2,8 @@
 
 from user import User
 from user import Credentials # we import user from class credentials
+from termcolor import colored
+from pyfiglet import Figlet
 
 
 def create_account(first_name, last_name, email, password): #Function to create a new account
