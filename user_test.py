@@ -65,3 +65,39 @@ class TestCredentials(unittest.TestCase):
         self.user_credential.save_credentials()
         self.assertEqual(len(Credentials.user_credentials), 1)
 
+    def test_save_multiple_credentials(self):
+        self.user_credential.save_credentials()
+        test_Credentials = Credentials("account_name", "email", "password")
+        test_Credentials.save_credentials()
+
+        self.assertEqual(len(Credentials.user_credentials), 2)
+    
+    def test_delete_credentials(self):
+        self.user_credential.save_credentials()
+        test_Credentials = Credentials("account_name", "email", "password")
+        test_Credentials.save_credentials()
+
+        self.assertEqual(len(Credentials.user_credentials), 1)
+
+    def test_display_credentials(self):
+        self.assertEqual(Credentials.display_credentials(),Credentials.user_credentials)
+
+    def test_find_account(self):
+        self.user_credential.save_credentials()
+
+        test_Credentials = Credentials("sharonnevanessa", "sharonnekay23@gmail.com", "shazzykay01" )
+        test_Credentials.save_credentials()
+
+        found_account = Credentials.find_by_account_name("sharonnevanessa")
+
+        self.assertEqual(found_account.email,test_Credentials.email)
+
+    def test_copy_account(self):
+        '''
+        Test to confirm that we are copying a credential from the accounts found
+        '''
+        self.user_credential.save_credentials()
+        Credentials.copy_credential("shazzykay01")
+    
+        self.assertEqual(self.user_credential.password,pyperclip.paste())
+    
