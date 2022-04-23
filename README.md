@@ -14,7 +14,7 @@
 <img src="https://github.com/SharonneKemboi/Encryption-Pass-Locker/blob/master/Images/Screenshot%20from%202022-04-23%2019-10-59.png">
 
 
-<p>Atarah's Passsaver & Locker is a python application that helps users generate and store passwords for their personal accounts. The Password Locker runs on the terminal and uses short codes to navigate through it.</p>
+> <p>Atarah's Passsaver & Locker is a python application that helps users generate and store passwords for their personal accounts. The Password Locker runs on the terminal and uses short codes to navigate through it.</p>
 
 
 ## Table of Content
@@ -98,7 +98,7 @@
 
 
 ## Authors information
-Feel free to add your contribution to the code.
+> Feel free to add your contribution to the code.
 
 > If you have any questions,comments or advice,feel free to contact me
 
