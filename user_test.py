@@ -51,3 +51,6 @@ class TestCredentials(unittest.TestCase):
         
         self.user_credential = Credentials("sharonnevanessa", "sharonnekay23@gmail.com", "shazzykay01" )
 
+    def tearDown(self):
+            
+        Credentials.user_credentials = []
