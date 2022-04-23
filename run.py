@@ -9,3 +9,14 @@ def create_account(first_name, last_name, email, password): #Function to create 
 
     return new_account
 
+
+def save_account(account): #function to save account
+
+    account.save_account()
+
+
+def generate_password(account): #function to generate password
+    '''
+    function to generate password
+    '''
+    account.generate_password()
