@@ -130,3 +130,7 @@ def main():
     print("Use these short codes : cc - create a new credentialt, dc - display credential details, fc -find credential, ex -exit credential list")
     short_code = input().lower()
     print('\n')
+
+if __name__ == '__main__':
+
+    main()

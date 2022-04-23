@@ -8,7 +8,7 @@ class User:
 
     user_createaccount = [] # create a variable that will be used to store our created user objects .
     
-    def _init_(self,first_name,last_name,email,password):
+    def __init__(self,first_name,last_name,email,password):
          '''
         __init__ method that helps us define properties for our objects.
 

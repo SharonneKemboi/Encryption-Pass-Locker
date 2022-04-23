@@ -101,3 +101,6 @@ class TestCredentials(unittest.TestCase):
     
         self.assertEqual(self.user_credential.password,pyperclip.paste())
     
+if __name__ == '__main__':
+    unittest.main()
+    
