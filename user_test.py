@@ -1,7 +1,8 @@
 import unittest #importing the unittest module
+import pyperclip
 from user import User #import the class from user file.
 
-
+#firstclass
 class TestUser(unittest.TestCase):
     '''
     TestUser is a subclass of the parent class.
@@ -42,7 +43,7 @@ class TestUser(unittest.TestCase):
         self.assertEqual(self.new_account.password,"password")
 
 
-#second test
+#second class 
 from user import Credentials
 
 class TestCredentials(unittest.TestCase):
@@ -54,4 +55,13 @@ class TestCredentials(unittest.TestCase):
     def tearDown(self):
             
         Credentials.user_credentials = []
-        
+
+    def test_init(self):
+        self.assertEqual(self.user_credential.account_name, "sharonnevanessa")
+        self.assertEqual(self.user_credential.email, "sharonnekay23@gmail.com")
+        self.assertEqual(self.user_credential.password, "shazzykay01")
+    
+    def test_save_credentials(self):
+        self.user_credential.save_credentials()
+        self.assertEqual(len(Credentials.user_credentials), 1)
+
